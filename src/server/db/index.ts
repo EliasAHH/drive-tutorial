@@ -12,6 +12,7 @@ const globalForDb = globalThis as unknown as {
   conn: Pool | undefined;
 };
 
+
 const conn =
   globalForDb.conn ??
   createPool({
